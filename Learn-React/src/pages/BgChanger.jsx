@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
+
 function BgChanger() {
   const [colour, setColour] = useState("white");
 
   useEffect(() => {
-    document.body.style.backgroundColor = colour;
+    window.document.body.style.backgroundColor = colour;
   }, [colour]);
 
   return (

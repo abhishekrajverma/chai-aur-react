@@ -4,7 +4,10 @@ import App from './App.jsx'
 import SignUp from './pages/SignUp.jsx'
 import './index.css'
 import BgChanger from './pages/BgChanger.jsx'
+import UseEffect from './hooks/UseEffect.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <BgChanger/>
+    <React.StrictMode>
+        <UseEffect />
+    </React.StrictMode>
 )
